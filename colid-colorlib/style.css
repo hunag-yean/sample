@@ -52,7 +52,7 @@ CSS INDEX
 }
 
 .urlhoverColor p{
-	font-size: 16	 px;
+	font-size: 16px;
 	font-weight:bold;
 	font-family:Microsoft JhengHei;
 }
@@ -122,7 +122,7 @@ img {
 }
 
 .imgheader{
-	width: 150px !important;	
+	width: 150px;	
 }
 
 
@@ -135,7 +135,7 @@ h6 {
     margin: 0 0 0px;
     font-weight: 600;
     font-family: Microsoft JhengHei;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 30px;　　　          　
 }
 
@@ -351,7 +351,7 @@ input:-webkit-autofill:focus {
 **/
 
 .box {
-    padding: 50px 30px;
+    padding: 50px 14px;
     text-align: center;
     -webkit-box-shadow: 0 0 0 0 #ffffff;
     box-shadow: 0 0 0 0 #ffffff;
@@ -398,7 +398,7 @@ input:-webkit-autofill:focus {
 }
 
 .boxShow {
-    padding: 50px 18px;
+    padding: 50px 14px;
     font-family:Microsoft JhengHei;
     text-align: center;
     -webkit-box-shadow: 0 0 0 0 #ffffff;
@@ -440,12 +440,7 @@ input:-webkit-autofill:focus {
 	 font-size: 12px;
 	 color: #00837D;
 }
-.mytextMobile{
-	 font-family:Microsoft JhengHei;
-	 font-weight:bold;
-	 font-size: 12px;
-	 color: #00837D;
-}
+
 
 /** 反白取消功能 **/
 .box:hover {
@@ -509,7 +504,7 @@ input:-webkit-autofill:focus {
 	font-family:Microsoft JhengHei;
 	font-weight:bold;
     background: none;
-    font-size: 9px;
+    font-size: 10px;
     position: relative;
     border-top: 3px solid transparent;
     text-align: center;
@@ -1003,9 +998,6 @@ input:-webkit-autofill:focus {
     padding-left: 80px;
 }
 
-.side-icon-box a {
-    /**color: #ffffff; **/
-}
 .footer-bottom p{
 	color: #ffffff;
 	letter-spacing:2px;

@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-
 <head>
     <meta charset="utf-8">
     <meta name="author" content="John Doe">
@@ -48,6 +47,25 @@
 		font-size: 16px;
 	}
 	
+	#myBtnTop {
+	  display: none;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 30px;
+	  z-index: 99;
+	  font-size: 18px;
+	  border: none;
+	  outline: none;
+	  background-color: red;
+	  color: white;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 4px;
+	}
+	
+	#myBtnTop:hover {
+	  background-color: #555;
+	}
     </style>
 </head>
 
@@ -62,7 +80,7 @@
     </div>
 
     <!--Mainmenu-area-->
-    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="205">
         <div class="container" id="myNavbar">
             <!--Logo PC -->
             <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
@@ -75,8 +93,8 @@
 	                <span class="icon-bar"></span> 
 	           	</button>
             </div>
-            <div class="hidden-xs hidden-sm col-md-10 col-lg-10">
-            	<nav class="collapse navbar-collapse" id="primary-menu">
+            <div class="hidden-xs hidden-sm col-md-10 col-lg-10" ">
+            	<nav class="collapse navbar-collapse" id="primary-menu" >
 	                <ul class="nav navbar-nav navbar-right"> 
 					  <li><a href="#insurance-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"><span class="headerTest">申辦好處</span></a></li>
 			          <li><a href="#feature-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"><span class="headerTest"> 取得方式</span></a></li>
@@ -84,7 +102,7 @@
 			          <li><a href="#footer-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"><span class="headerTest"> 軟體下載</span></a></li>
 			          <li><a href="#" onclick="openWindows('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse')"><img src="images/icon/ICON-01.png"><p>分享至FB</p></a></li>
 			          <li><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank"><img src="images/icon/ICON-02.png"><p>分享至LINE</p></a></li>
-			          <li><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank"><img src="images/icon/ICON-03.png"><p>富邦Line官網</p></a></li>
+			          <li><a href="#" onclick="openWindows('https://www.fubon.com/financialholdings/home/index.html')" target="_blank"><img src="images/icon/ICON-03.png"><p>富邦官網</p></a></li>
 			          <li><a href="file/電子保單推廣網頁草擬v3.pdf"  target="_blank"><img src="images/icon/ICON-04.png"><p>申辦電子保單</p></a></li> 
 	                </ul>
 	            </nav>
@@ -106,10 +124,15 @@
 			          <li><a href="#feature-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"> 取得方式</a></li>
 			          <li><a href="#QA-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"> Q & A</a></li>
 			          <li><a href="#footer-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"> 軟體下載</a></li>
-			          <li><a href="#" onclick="openWindows('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse')" style=" font-size: 10px;"><img src="images/icon/ICON-01.png"><p>分享至FB</p></a></li>
-			          <li><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank" style=" font-size: 10px;"><img src="images/icon/ICON-02.png"><p>分享至LINE</p></a></li>
-			          <li><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank" style=" font-size: 10px;"><img src="images/icon/ICON-03.png"><p>Line官網</p></a></li>
-			          <li><a href="file/電子保單推廣網頁草擬v3.pdf"  target="_blank" style=" font-size: 10px;"><img src="images/icon/ICON-04.png" alt=""><p>申辦電子保單</p></a></li>
+			          
+			          <li><a href="#" onclick="openWindows('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse')" target="_blank">
+			          		<img src="images/icon/ICON-01.png"></a></li>
+			          <li><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank">
+			          		<img src="images/icon/ICON-02.png"></a></li>
+			          <li><a href="#" onclick="openWindows('https://www.fubon.com/financialholdings/home/index.html')" target="_blank">
+			          		<img src="images/icon/ICON-03.png"></a></li>
+			          <li><a href="file/電子保單推廣網頁草擬v3.pdf"  target="_blank" ">
+			          		<img src="images/icon/ICON-04.png"></a></li>
 	                </ul>
 	            </nav>
             </div>     
@@ -127,13 +150,13 @@
 	            <nav class="collapse navbar-collapse" id="primary-menu-mobile">
 	                <ul class="nav navbar-nav navbar-right">
 	                  <li ><p></br></p></li>
-					  <li class="mobileli"><a href="#insurance-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px; "> 申辦好處</a></li>
-			          <li class="mobileli"><a href="#feature-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px; "> 取得方式</a></li>
-			          <li class="mobileli"><a href="#QA-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"> Q & A</a></li>
-			          <li class="mobileli"><a href="#footer-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 8px;"> 軟體下載</a></li>
-			          <li class="mobileli"><a href="#" onclick="openWindows('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse')"><img src="images/icon/ICON-01.png">分享至FB</a></li>
+					  <li class="mobileli"><a href="#insurance-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon"> 申辦好處</a></li>
+			          <li class="mobileli"><a href="#feature-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon"> 取得方式</a></li>
+			          <li class="mobileli"><a href="#QA-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon"> Q & A</a></li>
+			          <li class="mobileli"><a href="#footer-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon"> 軟體下載</a></li>
+			          <li class="mobileli"><a href="#" onclick="openWindows('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse')"><img src="images/icon/ICON-01.png"> 分享至FB</a></li>
 			          <li class="mobileli"><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank"><img src="images/icon/ICON-02.png" > 分享至LINE</a></li>
-			          <li class="mobileli"><a href="#" onclick="openWindows('https://line.me/R/ti/p/%40fubon')" target="_blank"><img src="images/icon/ICON-03.png" > Line官網</a></li>
+			          <li class="mobileli"><a href="#" onclick="openWindows('https://www.fubon.com/financialholdings/home/index.html')" target="_blank"><img src="images/icon/ICON-03.png" > 富邦官網</a></li>
 			          <li class="mobileli"><a href="file/電子保單推廣網頁草擬v3.pdf"  target="_blank"><img src="images/icon/ICON-04.png" alt="" > 申辦電子保單</a></li>
 	                </ul>
 	            </nav>
@@ -174,7 +197,7 @@
 						    <div id="moreE" class="collapse">
 							    <div class="panel panel-info">
 							      <div class="panel-body" style="padding: 8px">
-									<a class="urlhoverColor" href=""><p>1.線上申請</p></a>
+									<a class="urlhoverColor" href="https://b2c.518fb.com/ecmobile/member/certificate.do"><p>1.線上申請</p></a>
 							      </div>					      
 							      <div class="panel-heading" style="padding: 8px">
 			                        <a class="urlhoverColor" href="https://b2c.518fb.com/ecmobile/member/login.do?r=d30afda1-040e-65b6-0736-415e0cdae103" target="_blank"><p>2.保單查詢連結</p></a>
@@ -250,14 +273,14 @@
     <section class="section-paddin oldnew-bg" >
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="hidden-xs col-sm-6 col-md-6">
                    	<div class="boxShow2">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-41.png" width="300" style="float: left;">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="hidden-xs col-sm-6 col-md-6">
                    	<div class="boxShow2">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-42.png" width="300" style="float: right;">
@@ -266,21 +289,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 text-right">
+                <div class="hidden-xs col-sm-4 col-md-4 text-right">
                    	<div class="boxShow2">
                         <div class="box-icon">
                             <img class="imgheader" src="images/ImgOne/ICON-43.png" width="300" vspace="20" style="float: right;">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="hidden-xs col-sm-4 col-md-4">
                    	<div class="boxShow2">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-45.png" width="140" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="hidden-xs col-sm-4 col-md-4">
                    	<div class="boxShow2">
                         <div class="box-icon">
                             <img class="imgheader" src="images/ImgOne/ICON-44.png" width="300" vspace="17"  style="float: left;">
@@ -288,7 +311,7 @@
                     </div>
                 </div>   
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="hidden-xs col-sm-12 col-md-12">
                    	<div class="boxShowVS">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-46.png" alt="">
@@ -297,7 +320,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="hidden-xs col-sm-12 col-md-12">
                    	<div class="boxShowVS">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-47.png" alt="">
@@ -306,7 +329,7 @@
                 </div>
             </div> 
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="hidden-xs col-sm-12 col-md-12">
                    	<div class="boxShowVS">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-48.png" alt="">
@@ -315,7 +338,7 @@
                 </div>
             </div>  
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="hidden-xs col-sm-12 col-md-12">
                    	<div class="boxShowVS">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-49.png" alt="">
@@ -324,7 +347,7 @@
                 </div>
             </div>  
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="hidden-xs col-sm-12 col-md-12">
                    	<div class="boxShowVS">
                         <div class="box-icon">
                             <img src="images/ImgOne/ICON-50.png" alt="">
@@ -333,7 +356,7 @@
                 </div>
             </div>   
 			<div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="hidden-xs col-sm-12 col-md-12">
                    	<div class="boxShowVS">
                         <div class="box-icon">
                         </div>
@@ -341,16 +364,130 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                   	<div class="boxShowVS">
-                        <div class="box-icon">
-                        </div>
-                    </div>
+                <div class="hidden-xs col-sm-12 col-md-12">
                 </div>
             </div>                                     
         </div>
     </section>
     
+    
+    <!-- mobile -->
+    <section class="section-paddin oldnew-bg" >
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-12.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12  hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-13.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-14.png" width="300" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-15.png" width="300">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-16.png" width="300">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-17.png" width="300">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-18.png" width="300">
+                        </div>
+                    </div>
+                </div>                                                                 
+            </div>
+            <div class="row">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-19.png" width="120">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-20.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12  hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-21.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-22.png" width="300" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-23.png" width="300">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-24.png" width="300">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-25.png" width="300">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                   	<div class="boxShow2">
+                        <div class="box-icon">
+                            <img src="images/mobile/ICON_mobile-26.png" width="300">
+                        </div>
+                    </div>
+                </div>                                                                 
+            </div>            
+    </section>
+    	
+    <!--  -->
     <section class="section-padding vdo-bg" id="video-page" >
         <div class="container">
           	<div class="row">
@@ -362,63 +499,68 @@
 	                 </div>
 	            </div>
           	</div>
+          	
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                	<div class=" box">
+                <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
+                	<div class="box">
                         <h4>電子強制證＿臨檢篇</h4>
-	                    <video id="my-video" class="video-js" controls controlsList="nodownload"   width="320" height="240">
-					    <source src="video/v1.mp4" type='video/mp4'>
-					    <source src="v1.webm" type='video/webm'>
-					    <p class="vjs-no-js">
-					     	預觀看請更新瀏覽器版本 ie9 以上 
-					      <a href="https://support.microsoft.com/zh-tw/help/17621/internet-explorer-downloads" target="_blank">更新瀏覽器</a>
-					    </p> 
-					    </video>                    
+					    <iframe width="320" height="160" src="https://www.youtube.com/embed/s_Y6_-DPFIA" frameborder="0" allowfullscreen></iframe>                 
 					</div>
                 </div>
             
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
                 	<div class="box">
                         <h4>電子強制證＿驗車篇</h4>
-	                    <video id="my-video" class="video-js" controls controlsList="nodownload"  width="320" height="240">
-					    <source src="video/v2.mp4" type='video/mp4'>
-					    <source src="v2.webm" type='video/webm'>
-					    <p class="vjs-no-js">
-					     	預觀看請更新瀏覽器版本 ie9 以上 
-					      <a href="https://support.microsoft.com/zh-tw/help/17621/internet-explorer-downloads" target="_blank">更新瀏覽器</a>
-					    </p> 
-					    </video>                    
+						<iframe width="320" height="160" src="https://www.youtube.com/embed/Rjd9VdEnzjQ" frameborder="0" allowfullscreen></iframe>                    
 					</div>
                 </div>          
 
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
                 	<div class="box">
                         <h4>電子強制證＿iphone 手機操作篇</h4>
-	                    <video id="my-video" class="video-js" controls controlsList="nodownload" width="320" height="240">
-					    <source src="video/iPhone.mp4" type='video/mp4'>
-					    <source src="iPhone.webm" type='video/webm'>
-					    <p class="vjs-no-js">
-					     	預觀看請更新瀏覽器版本 ie9 以上 
-					      <a href="https://support.microsoft.com/zh-tw/help/17621/internet-explorer-downloads" target="_blank">更新瀏覽器</a>
-					    </p> 
-					    </video>                    
+						<iframe width="320" height="160" src="https://www.youtube.com/embed/ePrB8joWYAE"  frameborder="0" allowfullscreen></iframe>                    
 					</div>
                 </div>
  
-                <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
                 	<div class="box">
-                        <h4>電子強制證＿Android 手機操作篇</h4>
-	                    <video id="my-video" class="video-js" controls controlsList="nodownload"  width="320" height="240">
-					    <source src="video/android.mp4" type='video/mp4'>
-					    <source src="android.webm" type='video/webm'>
-					    <p class="vjs-no-js">
-					     	預觀看請更新瀏覽器版本 ie9 以上 
-					      <a href="https://support.microsoft.com/zh-tw/help/17621/internet-explorer-downloads" target="_blank">更新瀏覽器</a>
-					    </p> 
-					    </video>                    
+                        <h4>電子強制證＿Android手機操作篇</h4>
+						<iframe width="320" height="160" src="https://www.youtube.com/embed/S5_JIxrm2wM" frameborder="0" allowfullscreen></iframe>              
 					</div>
                 </div>                
             </div>
+          	
+          	<!-- mobile -->
+            <div class="row">
+                <div class="col-xs-6 hidden-sm hidden-md hidden-lg ">
+                	<div class="box">
+                        <h4>電子強制證＿臨檢篇</h4>
+					    <iframe width="130" height="80" src="https://www.youtube.com/embed/s_Y6_-DPFIA" frameborder="0" allowfullscreen></iframe>                 
+					</div>
+                </div>
+            
+                <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                	<div class="box">
+                        <h4>電子強制證＿驗車篇</h4>
+						<iframe width="130" height="80" src="https://www.youtube.com/embed/Rjd9VdEnzjQ" frameborder="0" allowfullscreen></iframe>                    
+					</div>
+                </div>          
+
+                <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                	<div class="box">
+                        <h4>電子強制證＿iphone 手機操作篇</h4>
+						<iframe width="130" height="80" src="https://www.youtube.com/embed/ePrB8joWYAE"  frameborder="0" allowfullscreen></iframe>                    
+					</div>
+                </div>
+ 
+                <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                	<div class="box">
+                        <h4>電子強制證＿Android手機操作篇</h4>
+						<iframe width="130" height="80" src="https://www.youtube.com/embed/S5_JIxrm2wM" frameborder="0" allowfullscreen></iframe>              
+					</div>
+                </div>                
+            </div>
+            <!-- mobile end -->
         </div>
     </section>
 
@@ -428,50 +570,56 @@
           		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           			<div class="boxShow">
 		                 <div class="box-icon">
-		                     <img src="images/icon/ICON-27.png" alt="" > 
+		                     <img src="images/icon/ICON-27.png" alt="" vspace="13" > 
 		                 </div>
 	                </div>
+	                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+	                	<div class="panel panel-primary text-center">
+		                   	<div class="panel-heading">
+		                   		<a href="#footer-page"><h5 class="qaColor">請先下載並安裝電子保單瀏覽程式</h5></a>
+		                   	</div>
+	               		</div>   
+               		</div>	                
                 </div>
-              <div class="col-xs-12 col-sm-8 hidden-md hidden-lg">
-              </br>
+                <div class="hidden-xs hidden-sm col-md-8 col-lg-8">
+                </br>
+                </br>
                     <div class="page-title">
                     <p class="mytext" style="font-size: 10px; text-align: justify;">為提升網路交易安全，本公司電子保單服務自107年7月2日起個人電腦作業系統請轉換至
 					Windows 7(含)或Mac OS 10.10(含)以上之作業環境進行操作，使用簡訊、iOS/Android仍可正常開啟電子保單不受影響。(Windows XP,Windows Vista 與Mac OS 10.6.8以前
 					作業系統將因安全等級不足無法開啟電子保單服務。</p>
-                    <p style="font-size: 22px;">先下載並安裝 <a class="urlhoverColor" href="file/電子保單推廣網頁草擬v3.pdf" target="_blank">"電子保單瀏覽程式"</a> 點選跳至下載軟體處</p>
+                    <p style="font-size: 22px;">請先下載並安裝 <a class="urlhoverColor" href="#footer-page">"電子保單瀏覽程式"</a></p>
                     </div>
-               </div>  
-                               
-               <div class="hidden-xs hidden-sm col-md-8 col-lg-8">
-               </br>
+               </div>                
+               <div class="hidden-xs col-sm-8 hidden-md hidden-lg">
                </br>
                     <div class="page-title">
                     <p class="mytext" style="font-size: 10px; text-align: justify;">為提升網路交易安全，本公司電子保單服務自107年7月2日起個人電腦作業系統請轉換至
 					Windows 7(含)或Mac OS 10.10(含)以上之作業環境進行操作，使用簡訊、iOS/Android仍可正常開啟電子保單不受影響。(Windows XP,Windows Vista 與Mac OS 10.6.8以前
 					作業系統將因安全等級不足無法開啟電子保單服務。</p>
-                    <p style="font-size: 22px;">先下載並安裝 <a class="urlhoverColor" href="file/電子保單推廣網頁草擬v3.pdf" target="_blank">"電子保單瀏覽程式"</a> 點選跳至下載軟體處</p>
+                    <p style="font-size: 22px;">請先下載並安裝 <a class="urlhoverColor" href="#footer-page">"電子保單瀏覽程式"</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3">
+   
+                  
+           </div>    
+           <div class="row">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-17.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-20.png" alt="">
-                            <source media="(min-width: 650px)" srcset="images/icon/ICON-20.png">
-                            <source media="(min-width: 4650px)" srcset="images/icon/ICON-20.png">
                         </div>
                           <p class="mytext">點選電子保單 E-mail 中附加的 PDF 檔或 TPK 檔</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-21.png" alt="">
@@ -481,14 +629,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-18.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-22.png" alt="">
@@ -496,7 +644,7 @@
                         <p class="mytext">點選手機簡訊中的網址</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-23.png" alt="">
@@ -504,7 +652,7 @@
                         <p class="mytext">進入電子保單專區</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-24.png" alt="">
@@ -514,34 +662,34 @@
                 </div>
             </div>            
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-19.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="box">
                     <a class="urlhoverColor" href="https://www.fubon.com/insurance/home/index.htm" target="_blank">
                         <div class="box-icon">
                             <img src="images/icon/ICON-25.png" alt="" >
-                             <p class="mytext">富邦產險官網</p>
+                             <p class="mytext"><U>富邦產險官網</U></p>
                         </div>
                     </a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="box">
                    	  <a class="urlhoverColor" href="https://b2c.518fb.com/ecmobile/member/login.do?r=52edcb4d-f75c-4bf0-e5e5-204d21c3affd" target="_blank">
                         <div class="box-icon">
                             <img src="images/icon/ICON-26.png" alt="">
-                             <p class="mytext">保護會員服務區保單服務</p>
+                             <p class="mytext"><U>保護會員服務區保單服務</U></p>
                         </div>
                       </a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="hidden-xs col-sm-3 col-md-3">
                     <div class="boxShow">
                         <div class="box-icon">
                             <img src="images/icon/ICON-45.png" alt="">
@@ -550,7 +698,104 @@
                     </div>
                 </div>
             </div>
-
+            
+            <!-- mobile -->
+            <div class="row">
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-02.png" alt="">
+                        </div>
+                        </br><p class="mytext">點選電子保單 E-mail 中附加的 PDF 檔或 TPK 檔</p>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-03.png" alt="">
+                        </div>
+                        </br><p class="mytext">輸入電子保單密碼 ( 預設要保人身分證字號 )</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-05.png" alt="">
+                        </div>
+                        </br><p class="mytext">點選手機簡訊中的網址</p>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-06.png" alt="">
+                        </div>
+                        </br><p class="mytext">進入電子保單專區</p>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-07.png" alt="">
+                        </div>
+                        </br><p class="mytext">輸入手機號碼 / 認證碼 / 驗證碼</p>
+                    </div>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                           </br> <img src="images/mobile/ICON_mobile-08.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="box">
+                    <a class="urlhoverColor" href="https://www.fubon.com/insurance/home/index.htm" target="_blank">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-09.png" alt="" >
+                             </br><p class="mytext"><U>富邦產險官網</U></p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="box">
+                   	  <a class="urlhoverColor" href="https://b2c.518fb.com/ecmobile/member/login.do?r=52edcb4d-f75c-4bf0-e5e5-204d21c3affd" target="_blank">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-10.png" alt="">
+                             </br><p class="mytext"><U>保護會員服務區保單服務</U></p>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div class="boxShow">
+                        <div class="box-icon-mobile">
+                            <img src="images/mobile/ICON_mobile-11.png" alt="">
+                        </div>
+                        </br><p class="mytext">輸入手機號碼或車牌號碼</p>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile end -->
         </div>
     </section>
 
@@ -567,7 +812,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-9 col-md-offset-2">
                     <div class="panel-group" id="accordion">
                         <div class="panel">
                             <h4 class="panel-title qaColor">
@@ -694,230 +939,8 @@
         </div>
     </section>    
     
-    <footer class="footer-area relative ft-bg " id="footer-page" >
-           <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-4 col-md-4">
-            	<div class="boxShow">
-	                 <div class="box-icon">
-	                     <img src="images/icon/ICON-30.png" alt="" class="imgheader"> 
-	                 </div>
-	            </div>
-	          </div>  
-	        </div>
-               <div class="col-xs-12 hidden-sm col-md-4 col-lg-4" >
-              		<div class="panel panel-primary text-center">
-                   	<div class="panel-heading"><a href="javascript: void(0)" data-toggle="collapse" data-target="#moreone">
-                   		   <h5 class="qaColor">TWCA電子保單瀏覽程式</h5>
-                   	</a></div>
-               		</div>
-                       <address id="moreone"  class="side-icon-boxes collapse">
-                        <div class="side-icon-box">
-                           <a href="https://b2c.518fb.com/portal/electronic_policy_reader/ISAV_Reader_Setup.exe" target="new" id="pc">
-                              <div class="side-icon">
-                                  <img src="images/icon/ICON-06.png" alt="">
-                              </div>
-                              <p class="dl"><br />PC</p>
-                           </a>     
-                        </div>
-                           <div class="side-icon-box">
-                          		<a href="https://b2c.518fb.com/portal/electronic_policy_reader/ISAV_Mac_Reader.pkg" target="new" id="mac">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-07.png" alt="">
-                               </div>
-                               <p class="dl"><br />MAC</p>
-                               </a>
-                           </div>
-                           <div class="side-icon-box">
-                           	<a href="https://play.google.com/store/apps/details?id=com.twca.docreader.isav" target="new" id="android">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-08.png" alt="">
-                               </div>
-                               <p class="dl"><br />Android</p>
-                               </a>
-                           </div>
-                           <div class="side-icon-box">
-                           	<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=963032652&mt=8" target="new" id="ios">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-09.png" alt="">
-                               </div>
-                               <p class="dl"><br />IOS</p>
-                               </a>
-                            <div class="side-icon-box"></div>
-                            <div class="side-icon-box"></div>    
-                           </div>             
-                            <br/>&nbsp;<br/>&nbsp;<br/>                
-                       </address>
-                       <br/>
-               </div> 
- 
-               <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
-              		<div class="panel panel-primary text-center">
-                   	<div class="panel-heading">
-                   		   <h5 class="qaColor">TWCA電子保單瀏覽程式</h5>
-                   	</div>
-               		</div>
-                       <address id="moreone"  class="side-icon-boxes collapse">
-                        <div class="side-icon-box">
-                           <a href="https://b2c.518fb.com/portal/electronic_policy_reader/ISAV_Reader_Setup.exe" target="new" id="pc">
-                              <div class="side-icon">
-                                  <img src="images/icon/ICON-06.png" alt="">
-                              </div>
-                              <p class="dl"><br />PC</p>
-                           </a>     
-                        </div>
-                           <div class="side-icon-box">
-                          		<a href="https://b2c.518fb.com/portal/electronic_policy_reader/ISAV_Mac_Reader.pkg" target="new" id="mac">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-07.png" alt="">
-                               </div>
-                               <p class="dl"><br />MAC</p>
-                               </a>
-                           </div>
-                           <div class="side-icon-box">
-                           	<a href="https://play.google.com/store/apps/details?id=com.twca.docreader.isav" target="new" id="android">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-08.png" alt="">
-                               </div>
-                               <p class="dl"><br />Android</p>
-                               </a>
-                           </div>
-                           <div class="side-icon-box">
-                           	<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=963032652&mt=8" target="new" id="ios">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-09.png" alt="">
-                               </div>
-                               <p class="dl"><br />IOS</p>
-                               </a>
-                            <div class="side-icon-box"></div>
-                            <div class="side-icon-box"></div>    
-                           </div>             
-                            <br/>&nbsp;<br/>&nbsp;<br/>                
-                       </address>
-                       <br/>
-               </div>  
- 
-               
-               <div class="col-xs-6 hidden-sm col-md-4 col-lg-4">
-                   	<div class="panel panel-primary text-center">
-                   	<div class="panel-heading"><a href="javascript: void(0)" data-toggle="collapse" data-target="#moretwo">
-                   		<h5 class="qaColor">TWCA電子保單瀏覽操作手冊</h5>
-                   	</a></div>
-               		</div>
-                       <address id="moretwo" class="side-icon-boxes collapse">
-                           <div class="side-icon-box">
-                            <a href="https://b2c.518fb.com/portal/electronic_policy_reader/electronic_policy_reader_for_PC.pdf" target="new"  id="pc">
-                                <div class="side-icon">
-                                    <img src="images/icon/ICON-10.png" alt="">
-                                </div>
-                                <p class="dl"><br />PC</p>
-                            </a>
-                           </div>
-                           
-                           <div class="side-icon-box">
-                           	<a href="http://b2c.518fb.com/portal/electronic_policy_reader/electronic_policy_reader_for_MAC.pdf" target="new" id="mac">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-11.png" alt="">
-                               </div>
-                              	<p class="dl"><br />MAC</p>
-                             </a>
-                            </div>
-                           <p>&nbsp;</p> <br/> <br/> <br/> <br/><br/><br/><br/>
-                       </address>
-               </div>
-               
-                 <div class="hidden-xs col-sm-6 hidden-md hidden-lg">
-                   	<div class="panel panel-primary text-center">
-                   	<div class="panel-heading">
-                   		<h5 class="qaColor">TWCA電子保單瀏覽操作手冊</h5>
-                   	</div>
-               		</div>
-                       <address id="moretwo" class="side-icon-boxes collapse">
-                           <div class="side-icon-box">
-                            <a href="https://b2c.518fb.com/portal/electronic_policy_reader/electronic_policy_reader_for_PC.pdf" target="new"  id="pc">
-                                <div class="side-icon">
-                                    <img src="images/icon/ICON-10.png" alt="">
-                                </div>
-                                <p class="dl"><br />PC</p>
-                            </a>
-                           </div>
-                           
-                           <div class="side-icon-box">
-                           	<a href="http://b2c.518fb.com/portal/electronic_policy_reader/electronic_policy_reader_for_MAC.pdf" target="new" id="mac">
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-11.png" alt="">
-                               </div>
-                              	<p class="dl"><br />MAC</p>
-                             </a>
-                            </div>
-                           <p>&nbsp;</p> <br/> <br/> <br/> <br/><br/><br/><br/>
-                       </address>
-               </div>               
-               
-               <div class="col-xs-6 hidden-sm col-md-4 col-lg-4">
-                   	<div class="panel panel-primary text-center">
-	                   	<div class="panel-heading"><a href="javascript: void(0)" data-toggle="collapse" data-target="#morethree">
-	                   		<h5 class="qaColor">Adobe Reader程式</h5>
-	                   	</a></div>
-               		</div>                
-                       <address id="morethree" class="side-icon-boxes collapse">
-                           <div class="side-icon-box">
-                      		 <a href="https://get.adobe.com/tw/reader/" target="new" id="adobe">     
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-12.png" alt="">
-                               </div>
-                               <p class="dl"><br />Adobe Reader</p>
-                          	 </a>   
-                           </div>
-                           <br/><br/><br/>
-                       </address>
-               </div>  
-               
-               <div class="hidden-xs col-sm-6 hidden-md hidden-lg">
-                   	<div class="panel panel-primary text-center">
-	                   	<div class="panel-heading">
-	                   		<h5 class="qaColor">Adobe Reader程式</h5>
-	                   	</div>
-               		</div>                
-                       <address id="morethree" class="side-icon-boxes collapse">
-                           <div class="side-icon-box">
-                      		 <a href="https://get.adobe.com/tw/reader/" target="new" id="adobe">     
-                               <div class="side-icon">
-                                   <img src="images/icon/ICON-12.png" alt="">
-                               </div>
-                               <p class="dl"><br />Adobe Reader</p>
-                          	 </a>   
-                           </div>
-                           <br/><br/><br/>
-                       </address>
-               </div>                 
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <br/> <br/> <br/> <br/><br/><br/><br/>
-        </div>
-        
-        <div class="hidden-xs hidden-sm col-md-12 col-lg-12" style="background-color: #00AAAA;">
-	        <div class="footer-bottom" >
-	            <div class="container">
-	                <p>
-	                	網路投保諮詢：(02)6638-7890 分機 58962 (上班日8:30-17:30) | 其他問題諮詢：<a class="dl" href="https://www.fubon.com/financialholdings/service/sub_contact.html" target="_blank">查詢網路客服請按這裡</a></br>
-	               		網站客服信箱：<a class="dl" href="https://www.fubon.com/insurance/b2c/content/main/new02.html?utm_source=fubon&utm_medium=banner&utm_campaign=Vision" target="_blank">ec.ins@fubon.com</a></br>
-	             		最佳瀏覽器版本：IE11 以上， google chome46 以上、Firefox45  以上、safari5.0 以上  ios8 以上、 android6.0
-	             	</p>
-	            </div>
-	        </div>
-        </div>
-        
- 		<div class="hidden-12 col-sm-12 hidden-md hidden-lg" style="background-color: #00AAAA;">
-	        <div class="footer-bottom">
-	            <div class="container">
-	                <p>
-	                	網路投保諮詢：(02)6638-7890 分機 58962 (上班日8:30-17:30) </br>其他問題諮詢：<a class="dl" href="https://www.fubon.com/financialholdings/service/sub_contact.html" target="_blank">查詢網路客服請按這裡</a></br>
-	               		網站客服信箱：<a class="dl" href="https://www.fubon.com/insurance/b2c/content/main/new02.html?utm_source=fubon&utm_medium=banner&utm_campaign=Vision" target="_blank">ec.ins@fubon.com</a></br>
-	             		最佳瀏覽器版本：IE11 以上， google chome46 以上、Firefox45  以上、safari5.0 以上  ios8 以上、 android6.0
-	             	</p>
-	            </div>
-	        </div>
-        </div>        
-    </footer>
+  	<div w3-include-html="footer.html"></div>
+  
     <!--Vendor-JS-->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -930,6 +953,7 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 	<script>
 	$(document).ready(function(){
 	  // Add scrollspy to <body>
@@ -978,6 +1002,7 @@
 
     var verson = navigator.sayswho ;
     console.log(verson);
+    
     if(verson == 'MSIE 9' || verson == 'MSIE 8'){
     	$(function(){
   	       $("#home-page").removeClass( "header-area overlay full-height relative v-center" ).addClass( "header-area section-padding" ); 
@@ -986,23 +1011,48 @@
  		var prevScrollpos = window.pageYOffset;
  		window.onscroll = function() {
    			var currentScrollPos = window.pageYOffset;
-   			var delayInMilliseconds = 100; //1 second
-   		  	if (prevScrollpos > currentScrollPos) {
+   			var delayInMilliseconds = 300; //1 second
+   			
+   			scrollFunction();
+   			
+   		  	if (prevScrollpos+200 > currentScrollPos) {
    		    	document.getElementById("myNavbar").style.top = "0";
+   		    	//alert("prevScrollpos="+prevScrollpos +" >  currentScrollPos="+currentScrollPos);
    		  	} else {
    		    	document.getElementById("myNavbar").style.top = "-200px";
+   		    	//alert("prevScrollpos="+prevScrollpos +" <  currentScrollPos="+currentScrollPos);
    		  	}
 	   		setTimeout(function() {
 	   			prevScrollpos = currentScrollPos;
 	   		}, delayInMilliseconds);
    		}
     }
-    </script>
+    
+    
+	function openWindows(url) {
+	    var myWindow = window.open(url, "MsgWindow", "width=800,height=500");
+	}
 	
-	<script>
-		function openWindows(url) {
-		    var myWindow = window.open(url, "MsgWindow", "width=800,height=500");
-		}
+	
+	function scrollFunction() {
+		
+		console.log("100");
+		
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("#myBtnTop").style.display = "block";
+	    } else {
+	        document.getElementById("#myBtnTop").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	
+	w3.includeHTML();
+	
 	</script>
 	
 </body>

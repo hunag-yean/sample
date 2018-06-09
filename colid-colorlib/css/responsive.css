@@ -7,6 +7,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .mainmenu-area #primary-menu > ul > li > a {
+    	font-size: 12px;
         padding: 15px 12px;
     }
     .header-area {
@@ -14,7 +15,7 @@
     }
     .price-table,
     .box {
-        padding: 30px 15px;
+        padding: 50px 14px;
     }
     .price-table.active {
         padding: 50px 15px;
@@ -32,6 +33,11 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+    
+	.mainmenu-area .logo img {
+	    width: 140px;
+	}    
+    
 }
 
 
@@ -51,7 +57,7 @@
         font-size: 20px;
     }
     .mainmenu-area .navbar-toggle {
-        margin-top: 20px;
+        margin-top: 6px;
     }
     .mainmenu-area .navbar-toggle .icon-bar {
         background-color: #ffffff;
@@ -91,6 +97,33 @@
     .mainmenu-area .logo {
         margin-left: 15px;
     }
+    
+    .mainmenu-area .logo img {
+	    text-transform: capitalize;
+	    padding-top: 6px;
+	    width: 130px;
+	}
+	
+	.mytextMobile {
+	    font-family: Microsoft JhengHei;
+	    font-weight: bold;
+	    font-size: 12px;
+	    color: #00837D;
+	}
+	.navbar-nav > li > a {
+		font-family: Microsoft JhengHei;
+	    padding-top: 10px;
+	    font-size: 16px;
+	}	    
+	.menuicon{
+		width: 20px;
+	}
+	.box-icon-mobile img {
+	    width:120px;
+	}	
+	.imgheader{
+		height: 100px;
+	}
 }
 
 

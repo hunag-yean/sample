@@ -81,14 +81,6 @@ nav li p {
 	line-height: 24px;¡@¡@¡@ 
 }
 
-.mobileli a {
-	font-weight:bold;
-	font-family:Microsoft JhengHei;
-}
-.mobileli a > img {
-	width: 20px;
-	font-family:Microsoft JhengHei;
-}
 
 a {
     text-decoration: none;
@@ -276,15 +268,22 @@ input:-webkit-autofill:focus {
 }
 
 .ft-bg {
-	background: url('images/icon/ICON-40.png')  center center no-repeat ;
+	background: url('images/icon/ICON-40lg.png')  center center no-repeat ;
 	background-size: cover;
 }
 
 .header-bg{
-	background: url('images/kv-01.png') center center no-repeat ;
-	background-size: cover;
+	width:100%;
 }
 
+.mobileli a {
+	font-weight:bold;
+	font-family:Microsoft JhengHei;
+}
+.mobileli a > img {
+	width: 20px;
+	font-family:Microsoft JhengHei;
+}
 
 /**
 *Default Button

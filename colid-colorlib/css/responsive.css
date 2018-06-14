@@ -83,7 +83,7 @@
         overflow: hidden;
     }
     .box {
-        padding: 30px 15px;
+        padding: 12px 15px;
     }
     .box .box-icon {
         height: auto;
@@ -130,7 +130,6 @@
 	    width:120px;
 	}	
 	.imgheader{
-		height: 100px;
 	}
 	.ft-bg {
 		background: url('../images/icon/ICON-40xs.jpg')  center center no-repeat ;
@@ -165,7 +164,18 @@
 		background: url('../images/mobile/vdo-bg.jpg') center center no-repeat ;
 		background-size: cover;
 	}
-		
+	.boxShow{
+	    padding: 12px 14px;
+	    font-family:Microsoft JhengHei;
+	    text-align: center;
+	    -webkit-box-shadow: 0 0 0 0 #ffffff;
+	    box-shadow: 0 0 0 0 #ffffff;
+	    -webkit-transition: 0.3s;
+	    transition: 0.3s;
+	    border-radius: 5px;
+	    -webkit-transform: translateY(0);
+	    transform: translateY(0);
+	}	
 }
 
 

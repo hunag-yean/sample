@@ -43,7 +43,7 @@
 	}
 	.oldnew-bg{
 	    background: url(../images/icon/ICON-35.jpg) center center no-repeat;
-   		background-size: contain;
+   		background-size: cover;
 	}
 	
 }
@@ -155,7 +155,7 @@
 	}
 	.fe-bg{
 		background: url('../images/mobile/fe-bg.jpg') ;
-		background-size: contain;
+		background-size: cover;
 	}
 	.oldnew-bg{
 		background: url('../images/mobile/oldnew-bg.jpg') center center no-repeat ;

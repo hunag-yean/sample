@@ -133,7 +133,7 @@
 	}
 	.ft-bg {
 		background: url('../images/icon/ICON-40xs.jpg')  center center no-repeat ;
-		background-size: contain;
+		background-size: cover;
 	}
 	.eColor{
 	  background-color: #F4E729;

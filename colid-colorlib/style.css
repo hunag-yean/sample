@@ -281,8 +281,12 @@ input:-webkit-autofill:focus {
 	font-family:Microsoft JhengHei;
 }
 .mobileli a > img {
-	width: 20px;
+	width: 25px;
 	font-family:Microsoft JhengHei;
+}
+
+.navbar-nav > li > a {
+	padding-bottom:0px;
 }
 
 /**
@@ -483,6 +487,10 @@ input:-webkit-autofill:focus {
     transition: 0.3s;
 }
 
+.myLogo{
+	width: 145px !important;
+}
+
 .overlay,
 .overlay a,
 .mainmenu-area a {
@@ -511,7 +519,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area #primary-menu > ul > li > a > img {
-	width:25px;
+	width:29px;
     background: none;
     /**padding: 30px 15px; **/
     position: relative;

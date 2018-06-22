@@ -1,6 +1,17 @@
 /* Medium Layout: 1280px. */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	
+	.headerTest{
+		font-size: 14px;
+	}
+	.pcLogo{
+		width: 150px;
+	}
+	.mainmenu-area #primary-menu > ul > li > a > img{
+		width: 29px;
+	}
+}
 
 
 /* Tablet Layout: 768px. */
@@ -45,7 +56,12 @@
 	    background: url(../images/icon/ICON-35.jpg) center center no-repeat;
    		background-size: cover;
 	}
-	
+	.mainmenu-area #primary-menu > ul > li > a > img{
+		width: 29px;
+	}
+	.headerTest{
+		font-size: 16px;
+	}
 }
 
 

@@ -511,7 +511,7 @@ input:-webkit-autofill:focus {
 	font-family:Microsoft JhengHei;
 	font-weight:bold;
     background: none;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     border-top: 3px solid transparent;
     text-align: center;
@@ -519,7 +519,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area #primary-menu > ul > li > a > img {
-	width:29px;
+	width:40px;
     background: none;
     /**padding: 30px 15px; **/
     position: relative;
@@ -563,7 +563,12 @@ input:-webkit-autofill:focus {
 /**
 *Header-area
 **/
-
+.headerTest{
+	font-size: 20px;
+}
+.pcLogo{
+	width: 210px;
+}
 .client-area,
 .header-area {
     background: #000000 url('images/kv-01.png') no-repeat scroll center center / cover;

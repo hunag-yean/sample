@@ -51,10 +51,6 @@
 	    z-index: -1;
 	}
 	
-	.headerTest{
-		font-size: 16px;
-	}
-	
 	#myBtnTop {
 	  display: none;
 	  position: fixed;
@@ -91,23 +87,21 @@
     <div class="mainmenu-area" data-spy="affix" data-offset-top="205">
         <div class="container" id="myNavbar">
             <!--Logo PC -->
-            <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
-	            <div class="navbar-brand logo">
-	            	<a href="#"><img src="images/icon/ICON-05.png" alt="" vspace="8" class="myLogo"></a>
+            <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+	            <div class="navbar-brand">
+	            	<a href="#"><img src="images/icon/ICON-05.png" alt="" vspace="8" class="pcLogo"></a>
 	            </div> 
 	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
 	            	<span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span> 
 	           	</button>
-            </div>
-            <div class="hidden-xs hidden-sm col-md-10 col-lg-10" ">
             	<nav class="collapse navbar-collapse" id="primary-menu" >
 	                <ul class="nav navbar-nav navbar-right"> 
-					  <li><a href="#insurance-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest">申辦好處</span></a></li>
-			          <li><a href="#feature-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest"> 取得方式</span></a></li>
-			          <li><a href="#QA-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest"> Q & A</span></a></li>
-			          <li><a href="#footer-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest"> 軟體下載</span></a></li>
+					  <li style="padding-top: 5px;"><a href="#insurance-page" ><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest">申辦好處</span></a></li>
+			          <li style="padding-top: 5px;"><a href="#feature-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest"> 取得方式</span></a></li>
+			          <li style="padding-top: 5px;"><a href="#QA-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest"> Q & A</span></a></li>
+			          <li style="padding-top: 5px;"><a href="#footer-page"><p></p><img src="images/icon/ICON-31.png" class="menuicon" style="width: 10px;"><span class="headerTest"> 軟體下載</span></a></li>
 			          <li><a href="#" onclick="openWindows('https://www.facebook.com/sharer/sharer.php?u=https://hunag-yean.github.io/sample/colid-colorlib/index.html')"><img src="images/icon/ICON-01.png"><p>分享至FB</p></a></li>
 			          <li><a href="#" onclick="openWindows('http://line.me/R/msg/text/?富邦產險LINE官方帳號活動網頁&https://hunag-yean.github.io/sample/colid-colorlib/index.html')" target="_blank"><img src="images/icon/ICON-02.png"><p>分享至LINE</p></a></li>
 			          <li><a href="#" onclick="openWindows('https://www.fubon.com/insurance/home/index.htm')" target="_blank"><img src="images/icon/ICON-03.png"><p>富邦產險</p></a></li>
@@ -1264,6 +1258,13 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 	<script>
 	$(document).ready(function(){
+		
+		document.body.style.zoom = 1
+		var scale = 'scale(1)';
+		document.getElementById("myNavbar").style.webkitTransform = scale;    // Chrome, Opera, Safari
+		document.getElementById("myNavbar").style.msTransform = scale;       // IE 9
+		document.getElementById("myNavbar").style.transform = scale;     // General
+		
 	  // Add scrollspy to <body>
 	  $('body').scrollspy({target: ".navbar", offset: 50});   
 	
